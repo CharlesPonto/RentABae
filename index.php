@@ -60,10 +60,10 @@
             </div>
             <!-- Collage of boyfriend images (4 only) -->
             <div class="flex justify-center gap-4 mt-6">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Charles" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
-                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Darwin" class="w-20 h-20 rounded-full object-cover border-4 border-purple-200 shadow-lg">
-                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Ponto" class="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow-lg">
-                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/nyco.jpg" alt="Charles" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/adam.jpg" alt="Darwin" class="w-20 h-20 rounded-full object-cover border-4 border-purple-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/noe.jpg" alt="Ponto" class="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/charles.jpg" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
             </div>
         </div>
     </section>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <!-- Meet Our Boyfriends Section (Improved Carousel) -->
+    <!-- Meet Our Boyfriends Section -->
     <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="boyfriends">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
