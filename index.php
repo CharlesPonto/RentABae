@@ -63,7 +63,7 @@
                 <img src="assets/boyfriend_profiles/nyco.png" alt="Charles" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
                 <img src="assets/boyfriend_profiles/adam.png" alt="Darwin" class="w-20 h-20 rounded-full object-cover border-4 border-purple-200 shadow-lg">
                 <img src="assets/boyfriend_profiles/noe.png" alt="Ponto" class="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow-lg">
-                <img src="assets/boyfriend_profiles/charles.png" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/charles.jpg" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
             </div>
         </div>
     </section>
@@ -223,11 +223,9 @@
                     <select id="boyfriend" name="boyfriend" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" tabindex="3">
                         <option value="">Select...</option>
                         <option value="Charles">Charles</option>
-                        <option value="Darwin">Darwin</option>
-                        <option value="Ponto">Ponto</option>
-                        <option value="Eli">Eli</option>
-                        <option value="Sam">Sam</option>
-                        <option value="Max">Max</option>
+                        <option value="Darwin">Nyco</option>
+                        <option value="Ponto">Adam</option>
+                        <option value="Eli">Noe</option>
                     </select>
                 </div>
                 <div>
