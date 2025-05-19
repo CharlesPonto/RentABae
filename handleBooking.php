@@ -2,11 +2,11 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once 'config.php';
 
-    $fullname = $_POST['fullname'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $boyfriend = $_POST['boyfriend'] ?? '';
-    $reason = $_POST['reason'] ?? '';
-    $message = $_POST['message'] ?? '';
+    $fullname  = htmlspecialchars(trim($_POST['fullname'] ?? ''));
+    $email     = htmlspecialchars(trim($_POST['email'] ?? ''));
+    $boyfriend = htmlspecialchars(trim($_POST['boyfriend'] ?? ''));
+    $reason    = htmlspecialchars(trim($_POST['reason'] ?? ''));
+    $message   = htmlspecialchars(trim($_POST['message'] ?? ''));
 
     $sql = "INSERT INTO bookings (fullname, email, boyfriend, reason, message) VALUES (?, ?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
@@ -15,3 +15,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: index.php?success=1");
     exit();
 }
+?>
