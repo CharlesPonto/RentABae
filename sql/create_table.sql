@@ -1,9 +1,0 @@
-CREATE TABLE bookings (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    fullname VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    boyfriend VARCHAR(100) NOT NULL,
-    reason VARCHAR(100) NOT NULL,
-    message TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
