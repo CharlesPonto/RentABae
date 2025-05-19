@@ -103,113 +103,130 @@
 
     <!-- Meet Our Boyfriends Section -->
     <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="boyfriends" aria-label="Meet Our Boyfriends">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <span class="uppercase text-pink-600 tracking-widest font-semibold text-sm">Boyfriends</span>
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900">Meet Our Boyfriends</h2>
-                </div>
-                <div class="relative flex items-center justify-center">
-                    <!-- Left Arrow -->
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="uppercase text-pink-600 tracking-widest font-semibold text-sm">Boyfriends</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900">Meet Our Boyfriends</h2>
+            </div>
+
+            <div class="relative flex items-center justify-center">
+                <!-- Left Arrow -->
                 <button id="boyfriend-prev" class="absolute left-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Previous">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-                    <button id="boyfriend-prev" class="absolute left-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Previous Boyfriend"></button>
-                    <div class="overflow-hidden w-full">
-                        <div id="boyfriend-carousel" class="flex transition-transform duration-500 ease-in-out">
-                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                                <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                    <img src="assets/boyfriend_profiles/charles.jpg" alt="Charles, Fullstack Developer, smiling and wearing casual clothes" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Charles</h3>
-                                    <div class="text-pink-600 font-semibold mb-1">Fullstack Developer</div>
-                                    <p class="text-gray-600 mb-3 text-center">Can build you a website and your dreams.</p>
-                                </div>
+
+                <div class="overflow-hidden w-full">
+                    <div id="boyfriend-carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Slide Items -->
+                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                            <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                <img src="assets/boyfriend_profiles/charles.jpg" alt="Charles, Fullstack Developer" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Charles</h3>
+                                <div class="text-pink-600 font-semibold mb-1">Fullstack Developer</div>
+                                <p class="text-gray-600 mb-3 text-center">Can build you a website and your dreams.</p>
                             </div>
-                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                                <div class="bg-pink-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                    <img src="assets/boyfriend_profiles/nyco.jpg" alt="Nyco, Technician, holding a toolkit and smiling" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Nyco</h3>
-                                    <div class="text-blue-600 font-semibold mb-1">Technician</div>
-                                    <p class="text-gray-600 mb-3 text-center">Fixes more than just your heart.</p>
-                                </div>
+                        </div>
+
+                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                            <div class="bg-pink-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                <img src="assets/boyfriend_profiles/nyco.png" alt="Nyco, Technician" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Nyco</h3>
+                                <div class="text-blue-600 font-semibold mb-1">Technician</div>
+                                <p class="text-gray-600 mb-3 text-center">Fixes more than just your heart.</p>
                             </div>
-                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                                <div class="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                    <img src="assets/boyfriend_profiles/adam.png" alt="Adam, Data Analyst, with a laptop and charts" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Adam</h3>
-                                    <div class="text-purple-600 font-semibold mb-1">Data Analyst</div>
-                                    <p class="text-gray-600 mb-3 text-center">Will analyze your love language.</p>
-                                </div>
+                        </div>
+
+                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                            <div class="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                <img src="assets/boyfriend_profiles/adam.png" alt="Adam, Data Analyst" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Adam</h3>
+                                <div class="text-purple-600 font-semibold mb-1">Data Analyst</div>
+                                <p class="text-gray-600 mb-3 text-center">Will analyze your love language.</p>
                             </div>
-                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                                <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                    <img src="assets/boyfriend_profiles/noe.jpg" alt="Noe, Frontend Developer, creative and stylish" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Noe</h3>
-                                    <div class="text-pink-600 font-semibold mb-1">Frontend Developer</div>
-                                    <p class="text-gray-600 mb-3 text-center">Makes every date look beautiful.</p>
-                                </div>
+                        </div>
+
+                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                            <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                <img src="assets/boyfriend_profiles/noe.png" alt="Noe, Frontend Developer" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Noe</h3>
+                                <div class="text-pink-600 font-semibold mb-1">Frontend Developer</div>
+                                <p class="text-gray-600 mb-3 text-center">Makes every date look beautiful.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Right Arrow -->
+                </div>
+
+                <!-- Right Arrow -->
                 <button id="boyfriend-next" class="absolute right-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Next">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
-                </div>
             </div>
-        </section>
+
+            <!-- Dot Indicators -->
+            <div id="carousel-dots" class="flex justify-center mt-6 space-x-2">
+                <!-- Dots will be added by JS -->
+            </div>
+        </div>
+    </section>
+
 
     <!-- Testimonials Section -->
     <section class="py-16 bg-white" id="testimonials" aria-label="Testimonials">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-pink-700 mb-4">What Our Clients Say</h2>
-                    <p class="text-gray-600">Real stories from happy girls who found their perfect companion.</p>
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pink-700 mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600">Real stories from happy girls who found their perfect companion.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="assets/testimonial_profiles/julia-baretto.jpg" alt="Lady Gaga, happy client, pop star" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
+                    <div>
+                        <p class="text-lg italic mb-2">“Charles debugged my life and deployed happiness. 10/10 would let him code my heart again!”</p>
+                        <footer class="font-semibold text-pink-700">– Julia Baretto</footer>
+                    </div>
                 </div>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                        <img src="assets/testimonial_profiles/julia-baretto.jpg" alt="Lady Gaga, happy client, pop star" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
-                        <div>
-                            <p class="text-lg italic mb-2">“Charles debugged my life and deployed happiness. 10/10 would let him code my heart again!”</p>
-                            <footer class="font-semibold text-pink-700">– Julia Baretto</footer>
-                        </div>
+                <div class="bg-blue-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="assets/testimonial_profiles/liza-soberano.jpg" alt="Taylor Swift, happy client, singer-songwriter" class="w-16 h-16 rounded-full object-cover border-4 border-blue-200">
+                    <div>
+                        <p class="text-lg italic mb-2">“Nyco fixed my WiFi and my mood. He's the only technician I want on speed dial!”</p>
+                        <footer class="font-semibold text-blue-700">– Liza Soberano</footer>
                     </div>
-                    <div class="bg-blue-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                        <img src="assets/testimonial_profiles/liza-soberano.jpg" alt="Taylor Swift, happy client, singer-songwriter" class="w-16 h-16 rounded-full object-cover border-4 border-blue-200">
-                        <div>
-                            <p class="text-lg italic mb-2">“Nyco fixed my WiFi and my mood. He's the only technician I want on speed dial!”</p>
-                            <footer class="font-semibold text-blue-700">– Liza Soberano</footer>
-                        </div>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="assets/testimonial_profiles/kathryn-bernando.jpg" alt="Kathryn Bernardo, happy client, actress" class="w-16 h-16 rounded-full object-cover border-4 border-purple-200">
+                    <div>
+                        <p class="text-lg italic mb-2">“Adam analyzed my love life and gave me a pie chart of happiness. Data never looked this good!”</p>
+                        <footer class="font-semibold text-purple-700">– Kathryn Bernardo</footer>
                     </div>
-                    <div class="bg-purple-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                        <img src="assets/testimonial_profiles/kathryn-bernando.jpg" alt="Kathryn Bernardo, happy client, actress" class="w-16 h-16 rounded-full object-cover border-4 border-purple-200">
-                        <div>
-                            <p class="text-lg italic mb-2">“Adam analyzed my love life and gave me a pie chart of happiness. Data never looked this good!”</p>
-                            <footer class="font-semibold text-purple-700">– Kathryn Bernardo</footer>
-                        </div>
-                    </div>
-                    <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                        <img src="assets/testimonial_profiles/main-mendoza.jpg" alt="Maine Mendoza, happy client, TV personality" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
-                        <div>
-                            <p class="text-lg italic mb-2">“Noe designed the perfect date and made my heart responsive. 5 stars for his front-end charm!”</p>
-                            <footer class="font-semibold text-pink-700">– Maine Mendoza</footer>
-                        </div>
+                </div>
+                <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                    <img src="assets/testimonial_profiles/main-mendoza.jpg" alt="Maine Mendoza, happy client, TV personality" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
+                    <div>
+                        <p class="text-lg italic mb-2">“Noe designed the perfect date and made my heart responsive. 5 stars for his front-end charm!”</p>
+                        <footer class="font-semibold text-pink-700">– Maine Mendoza</footer>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Book a Bae Section -->
     <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="book">
         <div class="max-w-lg mx-auto px-4">
             <div class="text-center mb-8">
+                <?php if (isset($_GET['success'])): ?>
+                    <script>
+                        alert("Thank you for booking a bae! We will contact you soon.");
+                    </script>
+                <?php endif; ?>
                 <h2 class="text-3xl font-bold text-blue-700 mb-4">Book a Bae Now</h2>
                 <p class="text-gray-600">Fill out the form and we'll match you with your perfect companion. <span class="block text-xs text-pink-500 mt-1">Your info is safe with us! 💖</span></p>
             </div>
-            <form action="#" method="POST" class="bg-white rounded-2xl shadow p-8 space-y-6" autocomplete="off">
+            <form action="handleBooking.php" method="POST" class="bg-white rounded-2xl shadow p-8 space-y-6" autocomplete="off">
                 <div>
                     <label for="fullname" class="block text-sm font-medium mb-1">Full Name</label>
                     <input type="text" id="fullname" name="fullname" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" tabindex="1">
@@ -225,7 +242,7 @@
                         <option value="Charles">Charles</option>
                         <option value="Darwin">Nyco</option>
                         <option value="Ponto">Adam</option>
-                        <option value="Eli">Noe</option>
+                        <option value="Noe">Noe</option>
                     </select>
                 </div>
                 <div>
@@ -263,13 +280,7 @@
     </footer>
 
     <!-- PHP Form Handler to be implemented for DB connection -->
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // TODO: Add MySQL database connection and insert logic here
-        echo '<script>alert("Thank you for booking a bae! We will contact you soon.");</script>';
-    }
-    ?>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
