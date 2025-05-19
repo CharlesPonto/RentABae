@@ -32,30 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
         function updateCarousel() {
             const visible = getVisibleCards();
             const cardWidth = carousel.children[0].offsetWidth;
-            carousel.style.transform = `translateX(-${
-                currentIndex * cardWidth
-            }px)`;
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = currentIndex >= cardCount - visible;
+            carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
         }
         prevBtn.addEventListener("click", () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
+            const visible = getVisibleCards();
+            currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+            updateCarousel();
         });
         nextBtn.addEventListener("click", () => {
             const visible = getVisibleCards();
-            if (currentIndex < cardCount - visible) {
-                currentIndex++;
-                updateCarousel();
-            }
+            currentIndex = (currentIndex + 1) % cardCount;
+            updateCarousel();
         });
         window.addEventListener("resize", () => {
-            const visible = getVisibleCards();
-            if (currentIndex > cardCount - visible) {
-                currentIndex = Math.max(0, cardCount - visible);
-            }
             updateCarousel();
         });
         updateCarousel();

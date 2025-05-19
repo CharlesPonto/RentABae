@@ -40,7 +40,7 @@
             <a href="#" class="hover:text-blue-600" onclick="closeMobileNav()">Home</a>
             <a href="#why" class="hover:text-blue-600" onclick="closeMobileNav()">About</a>
             <a href="#testimonials" class="hover:text-blue-600" onclick="closeMobileNav()">Testimonials</a>
-            <a href="#footer" class="hover:text-blue-600" onclick="closeMobileNav()">Contact</a>
+            <a href="#book" class="hover:text-blue-600" onclick="closeMobileNav()">Contact</a>
             <a href="#book" class="px-6 py-2 bg-pink-600 text-white rounded-full shadow hover:bg-pink-700 transition">Get Started</a>
         </div>
     </header>
@@ -60,10 +60,10 @@
             </div>
             <!-- Collage of boyfriend images (4 only) -->
             <div class="flex justify-center gap-4 mt-6">
-                <img src="assets/boyfriend_profiles/nyco.jpg" alt="Charles" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
-                <img src="assets/boyfriend_profiles/adam.jpg" alt="Darwin" class="w-20 h-20 rounded-full object-cover border-4 border-purple-200 shadow-lg">
-                <img src="assets/boyfriend_profiles/noe.jpg" alt="Ponto" class="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow-lg">
-                <img src="assets/boyfriend_profiles/charles.jpg" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/nyco.png" alt="Charles" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/adam.png" alt="Darwin" class="w-20 h-20 rounded-full object-cover border-4 border-purple-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/noe.png" alt="Ponto" class="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow-lg">
+                <img src="assets/boyfriend_profiles/charles.png" alt="Eli" class="w-20 h-20 rounded-full object-cover border-4 border-pink-200 shadow-lg">
             </div>
         </div>
     </section>
@@ -102,127 +102,105 @@
     </section>
 
     <!-- Meet Our Boyfriends Section -->
-    <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="boyfriends">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="uppercase text-pink-600 tracking-widest font-semibold text-sm">Boyfriends</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900">Meet Our Boyfriends</h2>
-            </div>
-            <div class="relative flex items-center justify-center">
-                <!-- Left Arrow -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="boyfriends" aria-label="Meet Our Boyfriends">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="uppercase text-pink-600 tracking-widest font-semibold text-sm">Boyfriends</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900">Meet Our Boyfriends</h2>
+                </div>
+                <div class="relative flex items-center justify-center">
+                    <!-- Left Arrow -->
                 <button id="boyfriend-prev" class="absolute left-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Previous">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-                <!-- Carousel Cards -->
-                <div class="overflow-hidden w-full">
-                    <div id="boyfriend-carousel" class="flex transition-transform duration-500 ease-in-out">
-                        <!-- Card 1 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Charles" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Charles</h3>
-                                <div class="text-pink-600 font-semibold mb-1">Bookworm</div>
-                                <p class="text-gray-600 mb-3 text-center">Loves museum dates and deep conversations.</p>
+                    <button id="boyfriend-prev" class="absolute left-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Previous Boyfriend"></button>
+                    <div class="overflow-hidden w-full">
+                        <div id="boyfriend-carousel" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                                <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                    <img src="assets/boyfriend_profiles/charles.jpg" alt="Charles, Fullstack Developer, smiling and wearing casual clothes" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Charles</h3>
+                                    <div class="text-pink-600 font-semibold mb-1">Fullstack Developer</div>
+                                    <p class="text-gray-600 mb-3 text-center">Can build you a website and your dreams.</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-pink-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Darwin" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Darwin</h3>
-                                <div class="text-blue-600 font-semibold mb-1">Fitness Enthusiast</div>
-                                <p class="text-gray-600 mb-3 text-center">Let's go for a hike or a smoothie date.</p>
+                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                                <div class="bg-pink-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                    <img src="assets/boyfriend_profiles/nyco.jpg" alt="Nyco, Technician, holding a toolkit and smiling" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Nyco</h3>
+                                    <div class="text-blue-600 font-semibold mb-1">Technician</div>
+                                    <p class="text-gray-600 mb-3 text-center">Fixes more than just your heart.</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Ponto" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Ponto</h3>
-                                <div class="text-purple-600 font-semibold mb-1">Photographer</div>
-                                <p class="text-gray-600 mb-3 text-center">I'll make you smile and snap it too.</p>
+                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                                <div class="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                    <img src="assets/boyfriend_profiles/adam.png" alt="Adam, Data Analyst, with a laptop and charts" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Adam</h3>
+                                    <div class="text-purple-600 font-semibold mb-1">Data Analyst</div>
+                                    <p class="text-gray-600 mb-3 text-center">Will analyze your love language.</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Eli" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Eli</h3>
-                                <div class="text-pink-600 font-semibold mb-1">Gamer</div>
-                                <p class="text-gray-600 mb-3 text-center">Always up for a Mario Kart challenge or movie night.</p>
-                            </div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-pink-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Sam" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Sam</h3>
-                                <div class="text-blue-600 font-semibold mb-1">Adventurer</div>
-                                <p class="text-gray-600 mb-3 text-center">Loves road trips and spontaneous plans.</p>
-                            </div>
-                        </div>
-                        <!-- Card 6 -->
-                        <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
-                            <div class="bg-purple-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
-                                <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Max" class="w-48 h-48 rounded-xl object-cover mb-4">
-                                <h3 class="font-bold text-2xl text-blue-900 mb-1">Max</h3>
-                                <div class="text-purple-600 font-semibold mb-1">Sweetheart</div>
-                                <p class="text-gray-600 mb-3 text-center">Always brings flowers and a smile.</p>
+                            <div class="min-w-full sm:min-w-1/2 lg:min-w-1/3 px-4">
+                                <div class="bg-blue-50 rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                                    <img src="assets/boyfriend_profiles/noe.jpg" alt="Noe, Frontend Developer, creative and stylish" class="w-48 h-48 rounded-xl object-cover mb-4">
+                                    <h3 class="font-bold text-2xl text-blue-900 mb-1">Noe</h3>
+                                    <div class="text-pink-600 font-semibold mb-1">Frontend Developer</div>
+                                    <p class="text-gray-600 mb-3 text-center">Makes every date look beautiful.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Right Arrow -->
+                    <!-- Right Arrow -->
                 <button id="boyfriend-next" class="absolute right-0 z-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none" aria-label="Next">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-white" id="testimonials">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-pink-700 mb-4">What Our Clients Say</h2>
-                <p class="text-gray-600">Real stories from happy girls who found their perfect companion.</p>
+    <section class="py-16 bg-white" id="testimonials" aria-label="Testimonials">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-pink-700 mb-4">What Our Clients Say</h2>
+                    <p class="text-gray-600">Real stories from happy girls who found their perfect companion.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                        <img src="assets/testimonial_profiles/julia-baretto.jpg" alt="Lady Gaga, happy client, pop star" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
+                        <div>
+                            <p class="text-lg italic mb-2">“Charles debugged my life and deployed happiness. 10/10 would let him code my heart again!”</p>
+                            <footer class="font-semibold text-pink-700">– Julia Baretto</footer>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                        <img src="assets/testimonial_profiles/liza-soberano.jpg" alt="Taylor Swift, happy client, singer-songwriter" class="w-16 h-16 rounded-full object-cover border-4 border-blue-200">
+                        <div>
+                            <p class="text-lg italic mb-2">“Nyco fixed my WiFi and my mood. He's the only technician I want on speed dial!”</p>
+                            <footer class="font-semibold text-blue-700">– Liza Soberano</footer>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                        <img src="assets/testimonial_profiles/kathryn-bernando.jpg" alt="Kathryn Bernardo, happy client, actress" class="w-16 h-16 rounded-full object-cover border-4 border-purple-200">
+                        <div>
+                            <p class="text-lg italic mb-2">“Adam analyzed my love life and gave me a pie chart of happiness. Data never looked this good!”</p>
+                            <footer class="font-semibold text-purple-700">– Kathryn Bernardo</footer>
+                        </div>
+                    </div>
+                    <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
+                        <img src="assets/testimonial_profiles/main-mendoza.jpg" alt="Maine Mendoza, happy client, TV personality" class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
+                        <div>
+                            <p class="text-lg italic mb-2">“Noe designed the perfect date and made my heart responsive. 5 stars for his front-end charm!”</p>
+                            <footer class="font-semibold text-pink-700">– Maine Mendoza</footer>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jen R." class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
-                    <div>
-                        <p class="text-lg italic mb-2">“Charles was the perfect plus-one to my reunion. Polite, witty, and made me feel confident. My friends were so jealous!”</p>
-                        <footer class="font-semibold text-pink-700">– Jen R.</footer>
-                    </div>
-                </div>
-                <div class="bg-blue-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Alexa G." class="w-16 h-16 rounded-full object-cover border-4 border-blue-200">
-                    <div>
-                        <p class="text-lg italic mb-2">“Darwin is an absolute gentleman. He made me laugh all night and even helped me with my fitness goals. Would definitely book again!”</p>
-                        <footer class="font-semibold text-blue-700">– Alexa G.</footer>
-                    </div>
-                </div>
-                <div class="bg-purple-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Mia S." class="w-16 h-16 rounded-full object-cover border-4 border-purple-200">
-                    <div>
-                        <p class="text-lg italic mb-2">“Ponto took the best photos of me for my Insta! He's so creative and sweet. 10/10!”</p>
-                        <footer class="font-semibold text-purple-700">– Mia S.</footer>
-                    </div>
-                </div>
-                <div class="bg-pink-50 rounded-2xl p-6 shadow flex items-center gap-4">
-                    <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Sophie L." class="w-16 h-16 rounded-full object-cover border-4 border-pink-200">
-                    <div>
-                        <p class="text-lg italic mb-2">“Max brought me flowers and made my day so special. He's a real sweetheart!”</p>
-                        <footer class="font-semibold text-pink-700">– Sophie L.</footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Book a Bae Section -->
     <section class="py-16 bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50" id="book">
@@ -286,7 +264,7 @@
         </div>
     </footer>
 
-    <!-- PHP Form Handler (to be implemented for DB connection) -->
+    <!-- PHP Form Handler to be implemented for DB connection -->
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // TODO: Add MySQL database connection and insert logic here
